@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 9vh;
+    display: block;
+    position: fixed;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    /*box-shadow: 0 0 0.5em rgb(0, 0, 0);*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+#logo {
+    margin-left: 1rem;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.menu-button-mobile {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: #02317c;
+
+    position: absolute;
+    right: 8px;   
+    
+    display: none;
+}
+
+.menu-button-mobile:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    background: turquoise;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    margin-right: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-family: 'Headland One', serif;
+    color: #02317c;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+li a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+li:hover{
+    color: whitesmoke;
+    background: turquoise;
+}
+
+li a:hover{
+    color: whitesmoke;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 100px;
+}
+
+
+.download-content img {
+    width: 300px;
+}
+
+.download-content {
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+}
+
+img {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.download-content:hover img {
+    opacity: 0.3;
+}
+
+
+.download-button {
+    padding: 1rem;
+    background: cornflowerblue;
+    color: ghostwhite;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        padding-top: 150px;
+        display: grid;
+        grid-template-columns: 250px 250px;
+        gap: 3rem;
+    }
+
+    .download-content {
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    
+    }
+
+    .download-content img {
+        width: 250px;
+    }
+
+    #logo {
+        width: 200px;
+        margin-left: 0;
+    }
+    
+    .menu {
+        padding: 0.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+        margin-left: 25vw;
+        margin-right: auto;
+    }
+
+    .container {
+        padding-top: 160px;
+        display: grid;
+        grid-template-columns: 250px;
+        gap: 3rem;
+    }
+
+    .download-content {
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    
+    }
+
+    .download-content img {
+        width: 250px;
+    }
+
+}
